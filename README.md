@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # ai-notes-frontend
-=======
 #  AI Notes Generator (Frontend)
 
 A modern frontend application that converts **PDFs or text into structured notes using AI**.
@@ -104,7 +102,7 @@ This frontend connects to a backend API that:
 
 ##  Screenshots
 
-    ![Home](/Frontend/public/hero.png)
+    ![Home](/hero.png)
 
 ---
 
@@ -138,4 +136,3 @@ MIT License
 ## 👨‍💻 Author
 
 Made with ❤️ by **Akram Ansari**
->>>>>>> 1c6e8dc (initial commit)
