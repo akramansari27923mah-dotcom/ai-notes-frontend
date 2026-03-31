@@ -136,6 +136,10 @@ const Navbar = () => {
                         </a>
                     </li>
 
+                    <Link to={'/dashboard'} className='px-4 py-2 rounded-lg bg-white text-black shadow-lg cursor-pointer hover:scale-105 transition-all duration-300 active:scale-75'>
+                        Dashboard
+                    </Link>
+
                     <Link to={'/input'} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/40 cursor-pointer hover:bg-white/60 transition text-nowrap">
                         <Rocket size={18} />
                         Get Started
