@@ -1,6 +1,6 @@
-import Nav from '../DashboardComponents/Nav'
-import Cards from '../DashboardComponents/Cards'
-import Sidebar from '../DashboardComponents/Sidebar'
+import Nav from '../dashboardComponents/Nav'
+import Cards from '../dashboardComponents/Cards'
+import Sidebar from '../dashboardComponents/Sidebar'
 import { useState } from 'react'
 
 const Dashboard = () => {
