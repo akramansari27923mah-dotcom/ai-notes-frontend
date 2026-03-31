@@ -100,9 +100,9 @@ This frontend connects to a backend API that:
 
 ---
 
-##  Screenshots
+###  Screenshots
 
-    ![Home](./public/hero.png)
+    ![Home](public/home.png)
 
 ---
 
