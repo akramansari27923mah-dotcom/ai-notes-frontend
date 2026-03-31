@@ -102,7 +102,7 @@ This frontend connects to a backend API that:
 
 ##  Screenshots
 
-    ![Home](/hero.png)
+    ![Home](./public/hero.png)
 
 ---
 
@@ -111,8 +111,6 @@ This frontend connects to a backend API that:
 *  Better AI formatting
 *  Notes history & storage
 *  User authentication
-*  Dark mode
-*  Export notes (PDF / DOCX)
 
 ---
 
