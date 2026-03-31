@@ -140,7 +140,7 @@ const Navbar = () => {
                         Dashboard
                     </Link>
 
-                    <Link to={'/input'} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/40 cursor-pointer hover:bg-white/60 transition text-nowrap">
+                    <Link to={'/create'} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/40 cursor-pointer hover:bg-white/60 transition text-nowrap">
                         <Rocket size={18} />
                         Get Started
                     </Link>

@@ -57,13 +57,13 @@ Frontend/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/akramansari27923mah-dotcom/ai-notes-frontend.git
 ```
 
 ### 2️⃣ Go to Frontend Folder
 
 ```bash
-cd frontend
+cd Frontend
 ```
 
 ### 3️⃣ Install Dependencies
@@ -77,7 +77,7 @@ npm install
 Create a `.env` file:
 
 ```env
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=https://ai-notes-backend-1o1h.onrender.com/api
 ```
 
 ---
@@ -100,11 +100,6 @@ This frontend connects to a backend API that:
 
 ---
 
-###  Screenshots
-
-    ![Home](public/home.png)
-
----
 
 ##  Future Improvements
 
