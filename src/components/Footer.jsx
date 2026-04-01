@@ -38,7 +38,11 @@ const Footer = () => {
         <div className='h-[20px] border border-gray-400'></div>
 
         <label className='cursor-pointer'>
-          Github
+          <a
+            target='_blank'
+            href="https://github.com/akramansari27923mah-dotcom/ai-notes-frontend">
+            Github
+          </a>
         </label>
       </div>
 
@@ -72,7 +76,11 @@ const Footer = () => {
 
 
         <label className='cursor-pointer'>
-          Github
+          <a
+            target='_blank'
+            href="https://github.com/akramansari27923mah-dotcom/ai-notes-frontend">
+            Github
+          </a>
         </label>
       </div>
     </>
