@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { createContext, useState, useContext, useEffect } from "react";
@@ -9,6 +10,8 @@ export const AiProvider = ({ children }) => {
     const [data, setData] = useState(null);
     const [loader, setLoader] = useState(false);
     const [previewDitact, setPreviewDitact] = useState('')
+    const [quiz, setQuiz] = useState('')
+    const [prev, setPrev] = useState('')
     const { user } = AuthCon();
 
     useEffect(() => {
@@ -29,8 +32,20 @@ export const AiProvider = ({ children }) => {
         }
     }, [user])
 
+    useEffect(() => {
+        if (user?._id) {
+            const res = localStorage.getItem(`quiz_${user._id}`);
+
+            if (res) {
+                setQuiz(JSON.parse(res));
+            }
+        }
+    }, [user])
+
+    
+
     return (
-        <AiContext.Provider value={{ data, setData, loader, previewDitact, setPreviewDitact, setLoader }}>
+        <AiContext.Provider value={{ data, setData, quiz, setQuiz, loader, previewDitact, setPreviewDitact, setLoader, prev, setPrev }}>
             {children}
         </AiContext.Provider>
     );

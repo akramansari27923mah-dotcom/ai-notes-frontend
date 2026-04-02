@@ -9,11 +9,9 @@ import { LoaderCircle } from "lucide-react"
 const Card = () => {
 
   const [notes, setNotes] = useState([])
-  const { setData, setPreviewDitact, setLoader, loader } = aiContext()
+  const { setData, setPreviewDitact, setLoader, loader, setPrev } = aiContext()
   const navigate = useNavigate()
 
-  console.log(notes);
-  
 
   useEffect(() => {
     const checkNotes = async () => {
@@ -21,6 +19,7 @@ const Card = () => {
 
         const note = await getNotesApiHandel()
         setNotes(note.notes)
+
       }
       catch (err) {
         console.error(err)
@@ -34,8 +33,10 @@ const Card = () => {
   }, [])
 
 
-  const previewNote = (note) => {
+  const previewNote = (note, quiz) => {
     setData(note)
+    setPrev(quiz)
+    localStorage.setItem('Prev', quiz)
     localStorage.setItem('view', 'View')
     setPreviewDitact('View')
 
@@ -82,12 +83,12 @@ const Card = () => {
           </p>
 
           <div className="mt-4 flex justify-between items-center">
-             <label className="text-sm font-semibold text-nowrap">
+            <label className="text-sm font-semibold text-nowrap">
               {formateData(items.createdAt)}
             </label>
 
             <button
-              onClick={() => previewNote(items.notes)}
+              onClick={() => previewNote(items?.notes, items?.quiz)}
               className="text-blue-500 text-sm hover:underline">
               View
             </button>

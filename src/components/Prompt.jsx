@@ -11,7 +11,7 @@ const Prompt = () => {
     const [pdf, SetPdf] = useState(null)
     const [prompt, setPrompt] = useState('')
     const [title, setTitle] = useState('')
-    const { setLoader, loader, setData, setPreviewDitact } = aiContext()
+    const { setLoader, loader, setQuiz, setData, setPreviewDitact } = aiContext()
     const { user } = AuthCon()
 
 
@@ -29,6 +29,7 @@ const Prompt = () => {
         try {
             setLoader(true)
             localStorage.removeItem('view')
+            localStorage.removeItem('prev')
             const formData = new FormData();
             formData.append("file", pdf);
             formData.append("prompt", prompt);
@@ -36,9 +37,10 @@ const Prompt = () => {
 
             const res = await getDataApiHandel(formData)
             setData(res?.data?.notes)
-            console.log(res);
+            setQuiz(res?.quiz)
 
             localStorage.setItem(`data_${user._id}`, JSON.stringify(res?.data?.notes))
+            localStorage.setItem(`quiz_${user._id}`, JSON.stringify(res?.quiz))
             setTimeout(() => {
                 window.location.href = '/result'
             }, 1000)

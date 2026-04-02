@@ -29,3 +29,8 @@ export const getNotesApiHandel = async () => {
     const res = await api.get('/ai/history');
     return res.data
 }
+
+// export const getQizeApiHandel = async ({note}) => {
+//     const res = await api.post('/quiz', { note })
+//     return res?.data
+// }
