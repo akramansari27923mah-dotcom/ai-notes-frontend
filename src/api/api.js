@@ -30,7 +30,7 @@ export const getNotesApiHandel = async () => {
     return res.data
 }
 
-// export const getQizeApiHandel = async ({note}) => {
-//     const res = await api.post('/quiz', { note })
-//     return res?.data
-// }
+export const getChatApiHandel = async (formData) => {
+    const res = await api.post('/ai/chat', formData);
+    return res.data
+}

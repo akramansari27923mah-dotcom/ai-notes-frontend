@@ -46,6 +46,10 @@ const Navbar = () => {
                         Dashboard
                     </Link>
 
+                    <Link to={'/chatWithAi'} className='px-4 py-2 rounded-lg bg-white text-black shadow-lg cursor-pointer hover:scale-105 transition-all duration-300 active:scale-75'>
+                        chatWithAi
+                    </Link>
+
 
                     {
                         user && (

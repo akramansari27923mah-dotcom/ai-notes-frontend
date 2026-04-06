@@ -6,13 +6,16 @@ import { AuthProvider } from './contexts/auth.context'
 import { AiProvider } from './contexts/ai.context'
 import { Toaster } from 'react-hot-toast'
 import 'animate.css';
+import { ChatProvider } from './contexts/chat.context'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <AuthProvider>
-      <AiProvider>
-        <App />
-      </AiProvider>
+      <ChatProvider>
+        <AiProvider>
+          <App />
+        </AiProvider>
+      </ChatProvider>
       <Toaster />
     </AuthProvider>
   </BrowserRouter>

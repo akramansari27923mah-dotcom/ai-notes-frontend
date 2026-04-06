@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard'
 import Demo from './components/Demo'
 import PrivacyPolicy from './components/PrivacyPolicy '
 import Contact from './components/Contact'
+import ChatWithAi from './pages/ChatWithAi'
 
 const App = () => {
   return (
@@ -55,6 +56,11 @@ const App = () => {
         <Route
           path='/contact'
           element={<Contact />}
+        />
+
+        <Route
+          path='/chatWithAi'
+          element={<ChatWithAi />}
         />
       </Routes>
 
