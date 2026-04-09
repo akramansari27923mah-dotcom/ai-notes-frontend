@@ -6,12 +6,14 @@ import PerfectFor from '../components/PerfectFor'
 import GetStarted from '../components/GetStarted'
 import Footer from '../components/Footer'
 import Action from '../components/Action'
+import ChatSupport from '../components/ChatSupport'
 
 const Home = () => {
   return (
     <div className='overflow-hidden'>
       <Navbar />
       <Hero />
+      <ChatSupport />
       <KeyFeatures />
       <Work />
       <Action />
