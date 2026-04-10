@@ -144,7 +144,7 @@ const ChatSupport = () => {
                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={` p-2 ${msg.role === "user" ? "bg-indigo-500 my-2 rounded-t-lg rounded-bl-lg text-white" : "bg-gray-100 w-[85%] text-black mb-2 rounded-t-lg rounded-br-lg"}`}
+                  className={` p-2 ${msg.role === "user" ? "bg-indigo-500 my-2 rounded-t-lg rounded-bl-lg text-white" : "bg-gray-50 w-[85%] text-black mb-2 rounded-t-lg rounded-br-lg"}`}
                 >
                   <MarkChat content={msg.content} />
                 </div>

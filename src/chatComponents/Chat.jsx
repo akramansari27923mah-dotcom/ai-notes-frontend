@@ -38,7 +38,7 @@ const Chat = () => {
 
             <div
               className={`px-4 py-2 rounded-2xl shadow-sm whitespace-pre-wrap text-sm ${msg.role === "user"
-                ? "bg-gray-100 shadow-lg border  text-white rounded-br-none"
+                ? "bg-indigo-600 shadow-lg border  text-white rounded-br-none"
                 : "bg-white text-gray-800 rounded-bl-none border"
                 }`}
             >
