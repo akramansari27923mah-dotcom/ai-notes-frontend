@@ -35,7 +35,11 @@ export const getChatApiHandel = async (formData) => {
   return res.data;
 };
 
-export const getChatSupportHandel = async (prompt,history, username) => {
+export const getChatSupportHandel = async (prompt, history, username) => {
   const res = await api.post("/ai/chatSupport", { prompt, history, username });
   return res.data;
+};
+export const updatePassword = async (newPassword) => {
+  const res = await api.post(`/auth/reset-password`, { newPassword });
+  return res.data
 };

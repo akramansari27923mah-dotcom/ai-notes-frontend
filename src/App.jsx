@@ -10,6 +10,7 @@ import Demo from "./components/Demo";
 import PrivacyPolicy from "./components/PrivacyPolicy ";
 import Contact from "./components/Contact";
 import ChatWithAi from "./pages/ChatWithAi";
+import ResetPassword from "./components/ResetPassword";
 
 const App = () => {
   return (
@@ -55,6 +56,15 @@ const App = () => {
           element={
             <Protect>
               <ChatWithAi />
+            </Protect>
+          }
+        />
+        {/* reset password */}
+        <Route
+          path="/change-password"
+          element={
+            <Protect>
+              <ResetPassword />
             </Protect>
           }
         />

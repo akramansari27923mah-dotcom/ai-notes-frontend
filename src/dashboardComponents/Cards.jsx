@@ -68,7 +68,7 @@ const Card = () => {
 
       {notes.map((items, ind) => (
         <div
-          key={items.userId}
+          key={ind}
           className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition duration-300 flex flex-col justify-between"
         >
           <div className="flex justify-between items-center">

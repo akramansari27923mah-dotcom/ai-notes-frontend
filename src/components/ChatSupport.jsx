@@ -88,7 +88,7 @@ const ChatSupport = () => {
 
       {showChat && (
         <div
-          className={`fixed md:right-[70px] md:bottom-[70px] ${showChat ? "animate__zoomIn" : "animate__zoomOut"} animate__animated  border border-gray-200 shadow-lg bottom-0 md:h-[500px] h-screen w-[400px] rounded-lg bg-white`}
+          className={`fixed md:right-[70px] md:bottom-[70px] ${showChat ? "animate__zoomIn" : "animate__zoomOut"} animate__animated  border border-gray-200 shadow-lg bottom-0 md:h-[500px] h-screen w-[390px] rounded-lg bg-white`}
         >
           <div className="flex justify-between p-2 items-center border-b">
             <div className="flex items-center justify-center gap-1">
